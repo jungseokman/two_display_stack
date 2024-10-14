@@ -79,6 +79,25 @@ class _MyWidgetState extends State<MyWidget> {
                         kToolbarHeight -
                         kBottomNavigationBarHeight,
                     color: Colors.blue,
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              children: List.generate(
+                                40,
+                                (index) {
+                                  return const Text("asdasd");
+                                },
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: _bottomPosition.abs() + 70,
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
