@@ -93,7 +93,9 @@ class _MyWidgetState extends State<MyWidget> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        AnimatedContainer(
+                          duration: const Duration(milliseconds: 500),
+                          curve: Curves.easeOut,
                           height: _bottomPosition.abs() + 70,
                         )
                       ],
